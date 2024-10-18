@@ -23,9 +23,11 @@
   flex: auto;
   height: 56px;
   padding: 0 1rem;
-  border: 1px solid rgb(255, 230, 0);
+  background-color: #fff;
+  border-radius: 0.325rem;
 }
 
 .search_button {
   white-space: nowrap;
+  background-color: #1220d8;
 }

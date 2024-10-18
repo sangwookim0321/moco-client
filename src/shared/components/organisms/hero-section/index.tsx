@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
         transform={'translateX(-50%)'}
       />
       <div className={styles.content}>
-        <FlexBox flexDirection={'row'} height={'20rem'} padding={'1.25rem'} backgroundColor={'#545454'} borderRadius={'0.325rem'}>
+        <FlexBox flexDirection={'row'} height={'20rem'} padding={'1.25rem'} backgroundColor={'#fdfdfd'} borderRadius={'0.325rem'}>
           <FlexBox justifyContent={'center'} alignItems={'center'} width={'100%'}>
             <ImageBox src={imageUrl} alt="HeroImage" width="300px" height="300px" borderRadius={'0.625rem'} objectFit={'cover'} />
           </FlexBox>
@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
               <Badge category={data?.category}>{data?.category}</Badge>
             </div>
             <p className={styles.hero_description}>{data?.description}</p>
-            <Button onClick={() => {}} width={'50%'} height={'3.125rem'}>
+            <Button className={styles.play_button} onClick={() => {}} width={'50%'} height={'3.125rem'}>
               플레이
             </Button>
           </FlexBox>

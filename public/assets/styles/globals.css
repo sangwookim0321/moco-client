@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/font/Pretendard-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,10 +16,14 @@
 html,
 body {
   margin: 0;
+  background-image: url('/assets/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Pretendard', sans-serif;
 }
 
 .main-content {
-  width: calc(100% - 420px);
+  width: calc(100% - 840px);
   margin: 0 auto;
   padding: 0 20px;
 }

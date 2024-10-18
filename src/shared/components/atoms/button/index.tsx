@@ -8,11 +8,12 @@ interface ButtonProps {
   variant?: 'primary' | 'secondary';
   width?: string;
   height?: string;
+  color?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ children, onClick, variant = 'primary', width, height, className }) => {
+const Button: React.FC<ButtonProps> = ({ children, onClick, variant = 'primary', width, height, color, className }) => {
   return (
-    <button style={{ width, height }} className={`${styles.button} ${styles[variant]} ${className}`} onClick={onClick}>
+    <button style={{ width, height, color }} className={`${styles.button} ${styles[variant]} ${className}`} onClick={onClick}>
       {children}
     </button>
   );

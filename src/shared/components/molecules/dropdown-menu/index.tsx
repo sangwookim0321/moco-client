@@ -10,7 +10,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ children }) => {
   return (
     <button className={styles.dropdown_menu}>
       <p className={styles.p}>{children}</p>
-      <IconTopBottom />
+      <IconTopBottom fill={'#fff'} />
     </button>
   );
 };
